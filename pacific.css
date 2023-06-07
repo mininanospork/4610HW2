@@ -1,0 +1,114 @@
+/*
+File: pacific.css
+GUI Assignment: HW2 for 4610
+Shawn MacFarland, UMass Lowell Computer Science, shawn_macfarland@student.uml.edu
+Copyright (c) 2023 by Shawn MacFarland. All rights reserved. All uses, copies, excerpts
+are reaserved exclusively for the author. May not be reused in anyway or cited in anyway 
+without author's explicit permission.
+created by SM 2023-06-06 1015AM
+Instructor: Professor Wenjin Zhou
+Sources of Help: Tim Truong TA instruction text flow of content div
+*/
+
+
+body {
+	background-color: #00569f;
+	background-image: url("ptrbackground.jpg");
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  width: 80%;
+  margin: auto;
+  min-width: 600px;
+  display: grid;
+  grid-template-columns: 200px 2fr ;
+}
+
+header {
+		grid-column: 1/4;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #0e0d34;
+	color: #FFFFFF;
+}
+nav {
+	grid-row:2/4;
+	background-color: #95c4e4;
+}
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+}
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000a3a;
+}
+nav a:visited {
+/*	color: #344873;
+*/
+	color: #000a3a
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+
+#content {
+ background-color: #FFFFFF;
+ padding-left: 20px;
+}
+
+#content ul {
+	list-style-image: url('marker.gif');
+	list-style-position: inside;
+}
+
+#content img {
+	float:left;
+	padding-right: 20px;
+}
+
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+	padding-bottom: 40px;
+}
+dt {
+	color: #000033;
+}
+.resort {
+	color: #618394;
+	font-weight: bolder;	
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	grid-column: 2/4;
+	background-color: #FFFFFF;
+ 	padding-left: 20px;
+ 	padding-bottom: 20px;
+ 	font-style: italic;
+ 	font-size: small;
+}
+
+@media screen and (min-width: 600px) {
+#content {
+ background-color: #FFFFFF;
+ padding-left: 20px;
+}
+
+
+
+}
